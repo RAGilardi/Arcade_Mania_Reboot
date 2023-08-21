@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--Font found on GoogleFont-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		
+		<title>Home Page Arcade Mania</title>
+		<link rel="stylesheet" href="./common/style.css">
+	</head>
+
+	<body>
+	<div class="container">
+		<div class="header-images">
+			<img src="common/thumbs.png" alt="thumbs" id="thumbs">
+			<img src="common/logo.png" alt="Arcade Mania Logo" id="logo">   
+		</div>
+
+		<ul>
+			<li><a href='./tris/index.html'>Tris</a></li>
+			<li><a href='./memory/index.html'>Memory Game</a></li>
+			<li><a href='./whack_a_bug/index.html'>Whack a Bug</a></li>
+			<li><a href='./running_duck/index.html'>Runner Duck</a></li>
+			<li><a href='./space_invaders/index.html'>Space Invaders</a></li>
+			<li><a href='./tetris/index.html'>Tetris<sup class="new">New!</sup></a></li>				
+		</ul>
+	</div>
+
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+	<button onclick="downFunction()" id="dwnBtn" title="Go to credits">Credits</button>
+
+	<div class="info-text">
+		<p>
+			This <a href="https://github.com/RAGilardi/Arcade_Mania_Bootleg">GitHub Page</a> was made in 2023 by Riccardo Aurelio Gilardi for free, with open-source as an exercise in building a HTML/CSS/JavaScript adaptive website from scratch. It was built by choice without the use of any framework (vue.js, react, jquery...).
+		</p>
+		<p>
+			<bold>DISCLAIMER:</bold>
+			This website is based on a project showed during a 4-days long introductory class to web development by <a href="https://boolean.careers/"><nobr>Boolean</nobr></a>, called <a href="https://booleancodingweek.teachable.com/courses/enrolled/1643637">coding week 2022 </a> (II edition).
+		</p>
+		<p>
+			I attended this course and tried to expand by myself the project adding some new features, such as responsive element sizing and positioning, new games, new animations and logic for some games, possibility to save high-scores, reset and menu buttons...
+		</p>
+		<p>
+			I highly recommend to consider a Boolean complete course if you're interested in learning web development. I could not do it and tried to learn something by myself, but their introductory lectures were totally interesting and well made.
+		</p> 
+	</div>
+
+	<!-- while the first js file is common to all the subpages, the second only contains functions needed by the homepage -->
+	<script src="./common/utils.js"></script>
+	<script src="./common/homePage.js"></script>
+	
+	
+    </body>
+</html>

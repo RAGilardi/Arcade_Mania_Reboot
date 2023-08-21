@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<title>Arcade Mania - Space Invaders</title>
+
+	<!-- common and specific CSS -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board" id='board'>
+		<div class="game-area">
+			<div id="grid">
+				<!-- Here the JS will create the 256 square cells -->
+			</div>
+
+		</div>
+		<div class="game-data">
+			<h1>Space Invaders</h1>
+			<p>Press &#8592; and &#8594; to move the spaceship.<br>Press the spacebar to shoot the aliens and save the planet!</p>
+			<h3>Score <span id="score"></span></h3>
+		</div>
+	</div>
+
+	<!-- common and specific JS scripts -->
+	<script src="./script.js"></script>
+	<script src="../common/utils.js"></script>
+</body>
+</html>

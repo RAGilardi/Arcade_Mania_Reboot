@@ -1,0 +1,55 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* CSS with objects specifict to the Tetris game */
+
+#grid {
+    --grid-width: 10; /* Number of cells horizontally */
+    --grid-height: 20; /* Number of cells vertically */
+
+    width: calc(var(--grid-width) * 2vw); /* Total grid width based on cell count */
+    height: calc(var(--grid-height) * 2vw); /* Total grid height based on cell count */
+
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid div:not(.bottom) {
+    width: calc(2vw - 1px); /* Cell width based on viewport unit */
+    height: calc(2vw - 1px); /* Cell height based on viewport unit */
+
+    /* background-color: red; */
+    /* font-size: 8px; */
+
+    border: dotted 1px white;
+}
+
+.tetromino {
+    background-color: white;
+}
+
+#mini-grid {
+    width: 10vw; /* Adjust the width as needed */
+    height: 10vw; /* Set the same height as width for a square mini-grid */
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 10px; /* Adjust the margin as needed */
+
+    /* background-color: yellow; */
+}
+
+#mini-grid div {
+    width: calc(2.5vw - 1px); /* Cell width based on viewport unit */
+    height: calc(2.5vw - 1px); /* Cell height based on viewport unit */
+
+    /* background-color: red; */
+    /* font-size: 8px; */
+
+    border: dotted 1px white;
+}
+
+#start-button {
+    display: block;
+}

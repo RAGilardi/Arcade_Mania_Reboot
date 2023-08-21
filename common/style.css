@@ -1,0 +1,244 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* GENERIC STYLE */
+:root{
+	--bg-color: #3535ec;
+	--text-color: #ffffff;
+	--accent-color: #f70d68;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+	
+	/*Applico il font a tutta la pagina, per comodità*/
+	font-family: 'Press Start 2P', cursive;
+	
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+img{
+	max-width: 100%;
+}
+
+ul{
+	list-style-type: none;
+	min-width: 300px;
+}
+
+li{
+	margin-bottom: 10%;
+}
+
+a{
+	text-decoration: none;
+	color: var(--text-color);
+	font-size: 20px;
+}
+
+a:hover{
+	color: var(--accent-color);
+}
+
+button {
+	display: none; /* Hidden by default */
+
+	/* Aesthetics */
+	z-index: 99;
+	border: var(--accent-color) 3px solid;
+	background-color: var(--text-color);
+	cursor: pointer;
+	
+	/* Text */
+	padding: 15px;
+	color: var(--accent-color);
+	border-radius: 5px;
+	font-size: 20px;
+  }
+  
+  button:hover {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	border-color: var(--text-color);
+  }
+
+h1{
+	font-size: 8px;
+	font-size: 2.0vw;
+	margin-bottom: 2.5%;
+}
+
+h3{
+	font-size: 8px;
+	font-size: 1.5vw;
+	margin: 2.5%;
+}
+
+p{
+	font-size: 8px;
+	font-size: 1.0vw;
+	margin-bottom: 3.5%;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Just for the HOMEPAGE */
+.container{
+	width: 70%;
+	min-width:400px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: 5% auto;
+
+	font-size: 14px;
+	line-height: 40%;
+}
+
+.header-images{
+	width: 70%;
+	min-width:400px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-images > #thumbs{
+	width: 70%;
+	max-width: 400px;
+}
+
+.header-images > #logo{
+	width: 100%;
+	max-width: 646px;
+}
+
+.new{
+	color: gold;
+}
+
+#topBtn{
+	/* Placed top right of page */ 
+	position: fixed; 
+	top: 10%; 
+	right: 5%;
+	width: fit-content;	
+	height: fit-content;
+	font-size: 20px;
+	font-size: 2vw;
+}
+
+#dwnBtn{
+	/* Placed top right of page */ 
+	position: fixed; 
+	bottom: 10%; 
+	right: 5%; 	
+	width: fit-content;	
+	height: fit-content;
+	font-size: 20px;
+	font-size: 2vw;
+}
+
+.info-text{
+	width: 90%;
+	min-width:400px;
+	
+	border: var(--accent-color) 3px solid;
+
+	margin: 2% auto;
+	margin-top: 0%;
+}
+
+.info-text > p {
+	justify-content: center;
+	align-self: center;
+
+	font-size: 8px;
+	font-size: 8px;
+	margin: 3%;
+}
+
+.info-text > p > a {
+	text-decoration: var(--accent-color) underline;
+	white-space: nowrap;
+	font-size: 8px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Games base structure */
+.board{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+
+	margin-bottom: 5%;
+}
+
+.game-area{
+	padding: 2%;
+
+	position: relative;
+
+	display: flex;
+}
+
+.game-data{
+	padding: 2%;
+	width: 50%;
+	font-size: 20px;
+	font-size: 1.5vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Game ending Alert */
+.game-alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+	padding: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game-alert-message{
+	font-size: 8px;
+	font-size: 5.0vw;
+	padding: 5%;
+	padding-left: 10%;
+	background-color: var(--accent-color);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-alert-message > button{
+	display: block;	
+	margin: 1%;
+	width: fit-content;
+	height: fit-content;
+	font-size: 20px;
+	font-size: 2.0vw;
+}

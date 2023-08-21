@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<title>Arcade Mania - Whack a Bug</title>
+
+	<!-- common and specific CSS -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board" id="board">
+		<div class="game-area">
+			<div id="grid">
+				<!-- No need to generate these with JS as are just a few and always the same -->
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+
+		</div>
+		<div class="game-data">
+			<h1>Whack a Bug</h1>
+			<p>Find and hit the most bugs within the time limits</p>
+			<h3>Time: <span id="timer-display"></span></h3>
+			<h3>Score: <span id="score-display"></span></h3>
+		</div>
+	</div>
+
+	<!-- common and specific JS scripts -->
+	<script src="./script.js"></script>
+	<script src="../common/utils.js"></script>
+</body>
+</html>

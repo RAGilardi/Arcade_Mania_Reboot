@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Arcade Mania - Memory Game</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<!-- common and specific CSS -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board" id="board">
+		<div class="game-area">
+			<div id="grid">
+				<!-- Grid is generated with JS -->
+			</div>
+		</div>
+		<div class="game-data">
+			<h1>Memory Game</h1>
+			<p>Pair the cards with same arts trying to make the least errors possible</p>
+			<p>Replay re-loading this page or go back home with the "back" button of your browser.</p>
+
+			<!-- In the span will appear the number of errors -->
+			<h3>Errors: <span id="error"></span></h3>
+		</div>
+	</div>
+
+	<!-- common and specific JS scripts -->
+	<script src="../common/utils.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

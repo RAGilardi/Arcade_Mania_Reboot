@@ -1,0 +1,54 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* CSS with objects specifict to the Whack a Bug game */
+
+:root{
+    --cell-size: 12vw;
+    --cell-gutter: 2vw;
+}
+
+#grid{
+    /* border: 2px solid #ffffff; */
+
+    width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+    height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.cell{
+    height: var(--cell-size);
+    width: var(--cell-size);
+    /* border: 4px solid #ffffff; */
+
+    /* might as well have used the card shape and not the background image for the back */
+    background-color: #ffffff;
+    background-image: url('./images/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overwriting classes for the card background */
+.bug{
+    background-image: url('./images/bug.png');
+}
+
+.splat{
+    background-image: url('./images/bug-splat.png');
+}
+
+/* Score graphics */
+h3{
+    margin-bottom: 12px;
+}

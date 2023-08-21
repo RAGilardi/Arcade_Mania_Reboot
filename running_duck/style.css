@@ -1,0 +1,52 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* CSS with objects specifict to the Running Duck game */
+
+:root{
+    --road-size: 5vw;
+}
+
+#grid{
+    width: calc(var(--road-size) * 10);
+    height: calc(var(--road-size) * 8);
+    /* background-color: gold; */
+
+    /* This is the floor */
+    border-bottom: 3px solid white;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#grid > div {
+    width: var(--road-size);
+    height: var(--road-size);
+    /* background-color: tomato; */
+}
+
+.duck{
+    /* Background-image and not image to better manipulate the sprit (no need the image to be indiced in google or anything like that */
+    background-image: url('./images/duck.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    /* !Duck speed parameter, might adapt to make it easier or more diffcult */
+    transition: transform 0.3s;
+}
+
+/* Transformation class */
+.duck-jump{
+    transform: translate(0, -120%); 
+    
+    /* transform: translate(0, -120%) scale(2) */
+}
+
+/* Plant class, cannot over, cannot overlap to the duck, just substitute it*/
+/* TODO: might add an overlap to let the player see better the hit-box and a more fluid animation */
+.plant:not(.duck){
+    background-image: url('./images/plant.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
