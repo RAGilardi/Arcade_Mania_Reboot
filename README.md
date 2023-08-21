@@ -1,7 +1,7 @@
 # ArcadeMania_Bootleg
 
 Access to the site at:
-https://ragilardi.github.io/Arcade_Mania_Bootleg/
+https://ragilardi.github.io/Arcade_Mania_Reboot/
 
 This GitHub Page was made in 2023 by Riccardo Aurelio Gilardi for free, with open-source as an exercise in building a HTML/CSS/JavaScript adaptive website from scratch. It was built by choice without the use of any framework (vue.js, react, jquery...).
 
