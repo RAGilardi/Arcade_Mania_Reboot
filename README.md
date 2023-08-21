@@ -27,3 +27,4 @@ Known bug and missing features:
     * no pac-man effects on the sides
     * no "all the way down" button to immediatly place a tetromino
     * no music
+    * tetris button doesn't resize with the page
